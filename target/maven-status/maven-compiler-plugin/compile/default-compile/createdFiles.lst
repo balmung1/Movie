@@ -4,6 +4,5 @@ moviereviews\MovieRepository.class
 moviereviews\MovieController.class
 moviereviews\AbstractEvent.class
 moviereviews\Movie.class
-moviereviews\MovieUpdated.class
 moviereviews\config\kafka\KafkaProcessor.class
 moviereviews\MovieCreated.class

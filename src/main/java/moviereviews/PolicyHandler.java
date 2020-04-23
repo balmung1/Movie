@@ -9,7 +9,13 @@ import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PolicyHandler{
-    
+public class PolicyHandler {
 
+    @StreamListener(KafkaProcessor.INPUT)
+    public void wheneverMovieCreate_MovieCreated(@Payload MovieCreated movieCreated) {
+
+        if (movieCreated.isMe()) {
+            System.out.println("##### listener MovieCreated : " + movieCreated.toJson());
+        }
+    }
 }
