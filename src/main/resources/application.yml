@@ -63,7 +63,7 @@ spring:
 
 api:
   url:
-    payment: http://movie:8080
+    payment: http://Movie:8080
 
 server:
   port: 8082
